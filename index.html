@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Bricks</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="icon.png" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="fixed">
+        <top class="top">
+            <p id="demo"></p>
+
+            <script>
+                const d = new Date();
+                document.getElementById("demo").innerHTML = d;
+            </script>
+            <div class="icontop">
+                <i class="fa fa-facebook" aria-hidden="true" style="font-size: 18px;"></i>
+                <i class="fa fa-instagram" aria-hidden="true" style="font-size: 20px;"></i>
+                <i class="fa fa-whatsapp" aria-hidden="true" style="font-size: 20px;"></i>
+                <i class="fa fa-twitter" aria-hidden="true" style="font-size: 20px;"></i>
+                <i class="fa fa-envelope" aria-hidden="true" style="font-size: 20px;"></i>
+            </div>
+        </top>
+
+        <header>
+            <img class="logo" src="BRICKS.png">
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="#" class="nav_active">HOME</a></li>
+                    <li><a href="About.html" class="nav-items">ABOUT US</a></li>
+                    <li><a href="Product.html" class="nav-items">PRODUCT</a></li>
+                    <li><a href="#" class="nav-items">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="zero">
+        <div class="page1">
+            <video loop muted autoplay poster="kebun.jpg">
+
+                <source src="pemandangan.mp4" type="video/mp4">
+            </video>
+
+            <main class="main">
+                <h1>
+                    EXPERIENCE NOW!
+                </h1>
+                <p style="font-size: 20px; color: white;">Try our product today</p>
+                <img src="ICON.png" width="250px" height="200px" class="logomain">
+                <div class="btn">
+                    <button class="mainbtn"><a href="#"
+                            style="color: black; text-decoration: none; font-weight: 700; font-size: 17px; padding-left: 30px; padding-right: 30px;">OUR
+                            PRODUCT</a></button>
+                </div>
+            </main>
+        </div>
+    </div>
+        <div class="page2">
+            <h1 class="about_us">ABOUT US</h1>
+            <div class="aboutpage">
+                <div class="about">
+                    <div class="innerpg2">
+                        <h1> PT BRICKS GROUP INDONESIA</h1>
+                        <p>PT Bricks Group Indonesia is group of young traders who have experienced the various
+                            commodities,
+                            engaged in domestic and international trade.
+                            We also support government programs in cooperative partnerships with UMKM (Usaha Mikro,
+                            Kecil,
+                            dan Menengah) Micro, Small and Medium Enterprises through the principle of mutual benefit.
+                        </p>
+                        <button><a href="About.html" style="color: black;">Read More</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stress">
+            <div class="page3">
+                <div class="slides">
+                    <div class="slide">
+                        <div class="productname">
+                            <h1>COFFEE BEANS</h1>
+                            <button>BUY NOW</button>
+                        </div>
+                        <img src="bijikopi.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="productname">
+                        <h1>SHORGUM</h1>
+                        <button>BUY NOW</button>
+                    </div>
+                    <img src="shorgum.jpg" alt="" width="100%">
+                </div>
+                <div class="slide">
+                    <div class="productname">
+                        <h1>CARDAMOM</h1>
+                        <button>BUY NOW</button>
+                    </div>
+                    <img src="cardamom.jpg" alt="" width="100%">
+                </div>
+                <div class="slide">
+                    <div class="productname">
+                        <h1>JAGUNG</h1>
+                        <button>BUY NOW</button>
+                    </div>
+                    <img src="corn.jpg" alt="" width="100%">
+                </div>
+                <div class="navigation">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(-1)">&#10095;</a>
+                </div>
+
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("slide");
+                        if (n > slides.length) {
+                            slideIndex = 1;
+                        }
+                        if (n < 1) {
+                            slideIndex = slides.length
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footerpage">
+                <div class="contact">
+                    <h1>Contact us</h1>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Padang ,West Sumatra ,Indonesia</p>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i>085363364030</p>
+                    <p><i class="fa fa-whatsapp" aria-hidden="true"></i>085363364030</p>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i>yourmail@id</p>
+                </div>
+                <div class="social">
+                    <h1>Social</h1>
+                    <p><i class="fa fa-facebook" aria-hidden="true"></i>facebook</p>
+                    <p><i class="fa fa-instagram" aria-hidden="true"></i>instagram</p>
+                    <p><i class="fa fa-twitter" aria-hidden="true"></i>twitter</p>
+                </div>
+                <div class="f3">
+                    <h1>About us</h1>
+                    <p>PT Bricks Group Indonesia is group of young traders who have <br> experienced
+                        the various commodities, engaged in domestic
+                        <br> and international trade.
+                    </p>
+
+                    <a href="About.html">Read More..</a>
+                </div>
+
+            </div>
+            <div class="end">
+                <p>
+                    © 2023 PT Bricks Group Indonesia. All Rights Reserved. Design by Ryoga Hardiansyah.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
